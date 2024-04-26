@@ -115,7 +115,7 @@ background-color: rgb(155, 252, 58);
 
 #welcome-image{
   border-top: 1px solid red;
-  background-image: url("Gas images/welcome-image.jpg");
+  background-image: url("welcome-image.jpg");
   width: 100%;
   height:80vh;
   background-size: cover;
