@@ -1,0 +1,108 @@
+body{
+  background-image: url(https://img.freepik.com/free-vector/realistic-ice-skating-background_23-2150974026.jpg?w=740&t=st=1711446803~exp=1711447403~hmac=9dabc82068175efac2476dc3c4bde02b57ed720c6ad24090e4c8bbf3d194ff0c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+form{
+  width: 80%;
+  margin: 2% 10%;
+  height: 100%;
+  font-size: 19px;
+  background-color: rgba(342,940,37,.5);
+  padding: 15px;
+ 
+}
+
+fieldset legend{
+font-size: 25px;
+text-align: center;
+color: blue;
+text-shadow: 2px 1px 1px black;
+text-transform: uppercase;
+font-weight: 600;
+}
+
+fieldset .main{
+  width: 60%;
+  margin-left: 20%;
+  height: 100%;
+}
+
+.main .content{
+  width: 100%;
+  height: 10vh;
+  border: 1px solid red;
+  padding-top: 18px;
+ margin: 10px;
+}
+
+.main label{
+  color: coral;
+  width: 20%;
+  height: 10%;
+  margin-left: 50px;
+  
+}
+
+.main .input,
+.main .input select{
+  width: 40%;
+  height: 70%;
+  float: right;
+  border: none;
+  outline: none;
+  margin-right: 30px;
+  font-size: 17px;  
+}
+
+.main .input select{
+  width: 100%;
+  height: 100%;
+  margin-right: 5px;
+  /* margin-top: 10px; */
+}
+
+.content textarea{
+  resize: none;
+}
+
+.terms{
+  display: flex;
+
+}
+.terms input{
+  margin-left: 30px;
+  margin-right: 10px;
+  
+}
+.terms p{
+  color: blue;
+}
+
+.btn{
+  width: 200px;
+  padding: 10px 8px;
+  height: 5%;
+  background-color: coral;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+.btn a{
+  text-decoration: none;
+  padding: 10px;
+  
+}
+
+@media (max-width:992px){
+  fieldset .main{
+    width: 90%;
+    margin-left: 1px;
+    margin: 2%;
+  }
+}

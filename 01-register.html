@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration form</title>
+  <link rel="stylesheet" href="01-register.css">
+  <link rel="icon" type="images/x-icon" href="reg.ico">
+</head>
+<body>
+  <div class="content-holder">
+    <form id="registrationForm" onsubmit="validatePassword(submit)">
+      <div class="heading">
+        <h1>Registration Form</h1>
+      </div>
+
+      <div class="label">
+        <label for="firstname">First Name:</label>
+      <input type="text" required>
+      </div>
+      
+      <div class="label">
+        <label for="lastname">Last Name:</label>
+      <input type="text">
+      </div>
+
+      <div class="label">
+        <label for="email">Email:</label>
+      <input type="email" required>
+      </div>
+
+      <div class="label">
+        <label for="phonenumber">Phone Number:</label>
+      <input type="number">
+      </div>
+
+      <div class="label">
+        <label for="deliveryadd">Delivery Address:</label>
+       <textarea></textarea>
+      </div>
+
+      <div class="label">
+        <label for="Password">Password:</label>
+      <input type="password" id="password" placeholder="Enter 8 characters" required>
+      </div>
+
+<br clear="all">
+      <div class="check">
+        <input type="checkbox">&nbsp;&nbsp;
+        <p>I agree to <a href="">terms and conditions</a></p>
+      </div>
+
+      <div class="button">        
+        
+        <button class="submit btn" onclick="showPopup()"><a href="02-log-in.html">Submit</a></button>
+
+        <button class="reset btn" type="reset">Reset</button>
+        
+      </div>
+    </form>
+  </div>
+
+  <div class="popup" id="successPopup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <p>Registration successful!</p>
+  </div>
+
+  <script src="01-register.js"></script>
+</body>
+</html>

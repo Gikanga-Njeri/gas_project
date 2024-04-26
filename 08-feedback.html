@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Page</title>
+  <link rel="stylesheet" href="08-feedback.css">
+
+  <script src="audio.js"> </script>
+</head>
+<body onload="welcome()">
+
+  <audio id="backgroundAudio" autoplay>
+
+    <source src="videos/little.mp3" type="audio/mp3">
+    
+</audio>
+
+
+  <form action="">
+    <h1>Our Feedback Page</h1>
+    <fieldset>
+    <legend>Comment on our services, Workers or Company</legend>
+
+    <div class="main">
+    <div class="content">
+      <label for="">Email:</label>
+    <input type="text" class="input" placeholder="Enter your Email:">
+    </div>
+
+    <div class="content">
+      <label for="">Comment Type:</label>
+    <div class="input">
+      <select name="" id="">
+        <option value="">Select</option>
+        <option value="">Suggestion</option>
+        <option value="">Bug Report</option>
+        <option value="">Report Issue</option>
+        <option value="">General feedback</option>
+      </select>
+    </div>
+    </div>
+
+    <div class="content">
+      <label for="">Comment:</label>
+    <textarea name="" id="" cols="20" rows="8" class="input"></textarea>
+      </div>
+
+      <div class="content">
+        <label for="">Upload a file:</label>
+        <input type="file" class="input" name="fileUpload" accept=".doc, .docx, .pdf, .jpg, .jpeg, .png">
+      </div>
+ 
+    <div class="terms">
+      <input type="checkbox" required>
+    <p>I agree to privacy term and conditions</p>
+    </div>
+
+    <button class="btn"><a href="index.html" onclick="thankMess()">Comment</a></button>
+
+    </div>
+  </div>
+  </form>
+</fieldset>
+
+
+<script>
+  function thankMess(){
+    alert("Thanks for your feedback\n We value You")
+  }
+</script>
+</body>
+</html>

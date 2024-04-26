@@ -1,0 +1,93 @@
+body{
+  /* background-image: url(https://image.shutterstock.com/image-vector/winter-background-snowing-falling-snowflakes-260nw-2353094483.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: blue;
+}
+
+.main-set{
+  width: 80%;
+  background-color: darkgrey;
+  margin: 5% 10%;
+  height: 90%;
+}
+
+.main-set legend{
+  text-align: center;
+  text-shadow: 1px 3px 2px black;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: orange;
+}
+
+.sub-set legend{
+font-size: 20px;
+}
+
+.sub-set{
+  width: 70%;
+  margin: 5% 15%;
+  height: 70%;
+}
+
+.sub-set ul li{
+  line-height: 40px;
+  color: blue;
+  font-size: 19px;
+}
+
+.sub-set ul li strong{
+  color: brown;
+}
+
+.main-set .div-order {
+  margin: 5% 15%;
+  line-height: 50px;
+  font-size: 18px;
+  color: chocolate;
+  width: 50%;
+  background-color: darkseagreen;
+  padding: 10px;
+  height: 50%;
+}
+
+.div-order label{
+  width: 20%;
+
+}
+
+.div-order input{
+width: 50%;
+height: 40px;
+margin-right: 10px;
+float: right;
+font-size: 17px;
+/* border-radius: 10px; */
+outline: none;
+border: none;
+background-color: transparent;
+border-bottom: 2px solid blue;
+}
+
+.btn a{
+text-decoration: none;
+padding: 10px 8px;
+}
+
+.div-order .btn{
+border: 1px solid white;
+border-radius: 2px;
+margin-top: 15px;
+cursor: pointer;
+background-color: grey;
+font-size: 20px;
+width: 230px;
+height: 40px;
+margin-left: 25%;
+}
+
+.div-order .btn:hover{
+  background-color: lightgrey;
+}
+
+ 

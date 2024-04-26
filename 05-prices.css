@@ -1,0 +1,62 @@
+body{
+  margin: 0;
+  background-color:lightblue ;
+}
+
+table caption{
+  font-size: 25px;
+  text-transform: uppercase;
+  color: blue;
+}
+
+table{
+  width: 700px;
+  height: 700px;
+  margin: 5% 25%;
+  border-collapse: collapse;
+}
+
+table tr th{
+  background-color:darkturquoise;
+}
+
+table tr td{
+  text-align: center;
+  font-size: 19px;
+}
+
+table tr:nth-child(odd){
+  background-color: cornflowerblue;
+}
+
+table tr:last-child td{
+  border-bottom: 2px solid navy;
+}
+
+table tr td:last-child{
+  color: red;
+}
+
+button{
+  padding: 20px 10px;
+  width: 300px;
+  height: 60px;
+  border: none;
+  border-radius: 50px;
+  margin-left: 40%;
+  margin-bottom: 50px;
+  font-size: 20px;
+  background-color:royalblue;
+  cursor: pointer;
+  text-align: center;
+  
+}
+
+button a{
+  text-decoration: none;
+  color: white;
+}
+
+button:hover{
+  background-color: deepskyblue;
+}

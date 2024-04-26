@@ -1,0 +1,335 @@
+body {
+  margin: 0;
+  max-height: fit-content;
+  background-color: rgb(72, 39, 191);
+  width: 100%;
+  
+}
+
+.heading{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: black;
+  line-height: 40px;
+  /* backdrop-filter: blur(50px); */
+  z-index: 1;
+  top: 0%;
+  position: sticky;
+  margin-bottom: 0px;
+  overflow: hidden;
+  /* border: 2px solid red; */
+}
+
+.heading .logo{
+  color: orange;
+  text-align:center;
+  padding: 10px 4px;
+  text-shadow: 2px 1px 2px red;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.icon{
+  color: rgb(245, 245, 245);
+  font-size: 2.5em;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0%;
+  /* border: 1px solid red; */
+}
+
+.heading nav ul{
+  display: flex;
+  width: 100%;
+  margin-right: 20px;  
+}
+
+.heading nav ul li{
+  background-color: rgba(52, 48, 48, 0.6);
+  padding: 10px 8px;
+  margin-left: 20px;
+  color: white;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+.heading nav ul li a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.heading nav ul li:hover{
+  background: black;
+  box-shadow: 1px 2px 3px rgba(255,255,255,.3);
+}
+
+.heading nav ul li a:hover{
+  color: orange;
+  padding: 15px;
+}
+
+.regLog{
+  background: transparent;
+ height: 40px;
+ float: right;
+ padding: 10px;
+ margin-right: 60px;
+}
+
+.regLog #register{
+  background-color: orange;
+}
+
+.regLog #log-in{
+  background-color: green;
+}
+
+.regLog #register,
+.regLog #log-in{
+  width: 100px;
+  padding: 10px 8px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: aliceblue;
+}
+
+.regLog #register a,
+.regLog #log-in a{
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+
+.regLog #register:hover{
+  background-color: rgb(250, 116, 68);
+}
+.regLog #log-in:hover{
+background-color: rgb(155, 252, 58);
+}
+
+#welcome-image{
+  border-top: 1px solid red;
+  background-image: url("Gas images/welcome-image.jpg");
+  width: 100%;
+  height:80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+#welcome-image .logo img{
+width: 23%;
+position: absolute;
+height: 45%;
+border-radius: 10px;
+margin-top: 8%;
+margin-left: 10px;
+}
+
+#welcome-image .welcome-page{
+  /* background-color: aqua; */
+  width: 50%;
+  height: 40%;
+  line-height: 75px;
+  margin: 5% 18%;
+  text-align: center;
+  padding: 10px;
+  color: orange;
+  margin-left: 25vw;
+  text-shadow: 1px 3px 2px black;
+}
+
+fieldset{
+  width: 98%;
+  height: 50%;
+  background-color: navy;
+  border: 1px solid black;
+  margin: 0;
+}
+
+fieldset legend{
+  text-align: center;
+  text-shadow: 1px 3px 2px black;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: orange;
+}
+
+fieldset p{
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+
+fieldset p strong{
+  color:orange;
+  opacity: .7;
+}
+
+fieldset span{
+  text-align: center;
+  font-size: 25px;
+  color: rgb(168, 86, 86);
+}
+
+.imageVideo{
+  width: 100%;
+  height: 70%;
+  background-color: rgb(112, 61, 17);
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+.imageVideo video{
+  width: 70%;
+  height: 60%;
+  margin: 1.6% 15%;
+  
+}
+
+.cylinderImages{
+  background-color: rgb(10, 10, 124);
+  display: flex;
+  flex-wrap:wrap; 
+  height: 70%;
+  width: 100%; 
+ align-items: center;
+ justify-content: center;
+}
+
+.images{
+  width: 30%;
+  height: 28%;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 5px;
+  box-sizing: border-box;
+
+}
+
+.images img{
+  width: 19vw;
+  height: 40vh;
+  border-radius: 10px;
+}
+
+.images button a{
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+}
+
+.images button a:hover{
+  color: orange;
+  padding: 10px;
+}
+
+.images button{
+  border: none;
+  padding: 10px 8px;
+  float: right;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 15px;
+  position: relative;
+ background-color: rgb(51, 43, 43);
+}
+
+.images button:hover{
+  background-color: black;
+}
+
+.footerEnd footer{
+background-color: white;
+display: flex;
+justify-content: space-between;
+width: 100%;
+height:23%;
+font-size: 18px;
+
+}
+
+.footerEnd .foot{
+  width: 30%;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.foot #title{
+  text-decoration: underline;
+  color: brown;
+  font-size: 20px;
+}
+
+.footerEnd a {
+  color: rgb(50, 50, 240);
+  text-decoration: none;
+}
+
+.footerEnd a:hover {
+  text-decoration: underline;
+  color: orange;
+  font-size: 19px;
+}
+
+#certification{
+  color: orange;
+  text-align: center;
+  font-size: 25px;
+  margin: 40%;
+  height: 30px;
+}
+
+@media(max-width:992px){
+  
+  .heading nav ul li{
+    margin-left: 6px;
+    width: 70px;
+    text-align: center;
+    /* padding: 10px 9px; */
+  }
+  .heading nav ul .two{
+     width: 90px;
+  }
+  .heading .logo{
+    font-size: 20px;
+  }
+  .regLog{
+    margin-right: 1px;
+  }
+  #welcome-image .logo img{
+   display: none;
+  }
+  fieldset{
+    width: 96%;
+  }
+  #welcome-image .welcome-page{
+    margin-left: 20vw;
+    letter-spacing: 5px;
+  }
+  #certification{
+    margin: 30%;
+  }
+  .images img{
+    width: 27vw;
+    height: 35vh;
+    padding: 2px;
+  }
+  #welcome-image .logo img{
+    width: 30%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  .footerEnd .foot{
+    width: 20%;
+  }
+}

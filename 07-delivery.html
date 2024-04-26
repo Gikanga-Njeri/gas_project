@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Page</title>
+  <link rel="stylesheet" href="07-delivery.css">
+
+  <script src="audio.js"></script>
+</head>
+<body>
+  <audio id="backgroundAudio" autoplay>
+
+    <source src="videos/little.mp3" type="audio/mp3">
+    
+</audio>
+
+
+  <fieldset class="main-set">
+    <legend>Delivery Page</legend>
+
+    <fieldset class="sub-set">
+      <legend>Terms and Conditions</legend>
+      <ul>
+        <li>We expect maximum cooperation our customers.</li>
+        <li>Delivery is done as per specified time and dates.</li>
+        <li>In case of order cancellation do it 2 hours earlier to avoid collision and mis-parkage.</li>
+        <li>In case of delay wait for 5 minutes or contact our customer service.</li>
+        <li>Make sure to take your receipt after payment and keep a copy for tracking.</li>
+        <li>For any assistance with fixing the cylinder, you can enquire from the delivery person.</li>
+        <li>In case of any leakages contact our <strong>Emergency Team: 081387476</strong> it has no charges.</li>
+      </ul>
+    </fieldset>
+
+    <div class="div-order">
+      <label for="">Enter your preferred Day:</label>
+    <input type="date" name="date" class="date" onchange="validateDate()" required>
+    <p id="error-msg" style="color: red; display: none;">Please select a future date.</p>  <br>
+
+    <label for="">Select time between 6am & 10pm:</label>
+    <input type="time" name="time" class="time" required> <br>
+    <!-- <p id="error-msg" style="color: red; display: none;">These are non-working hours.</p> <br> -->
+
+    <!-- <input type="submit" class="btn" onclick="delTimeDate()">  -->
+    <button class="btn" onclick="delTimeDate()"><a href="index.html">Submit</a></button><br>
+
+    <button class="btn" onclick="scheduleDel()"><a href="index.html">Schedule Delivery</a></button><br>
+
+    <button class="btn" onclick="EmergencyDel()"><a href="index.html">Emergency Delivery</a></button><br>
+
+    </div>
+    
+  </fieldset>
+
+
+  <script>
+    function delTimeDate(){
+      var date = document.querySelector(".date").value;
+    var time = document.querySelector(".time").value;
+
+    alert("Your Delivery will be \n on " + date + "\n at " + time);
+
+    }
+
+    function scheduleDel(){
+      var date = document.querySelector(".date").value;
+    var time = document.querySelector(".time").value;
+
+    alert("Your Scheduled Delivery will be \n on " + date + "\n at " + time);
+
+    }
+
+    function EmergencyDel(){
+      var date = document.querySelector(".date").value;
+    var time = document.querySelector(".time").value;
+
+    alert("Your Emergency Delivery will be \n on " + date + "\n at " + time);
+
+    }
+
+    function validateDate() {
+    var selectedDate = new Date(document.querySelector('.date').value);
+    var currentDate = new Date();
+
+    if (selectedDate < currentDate) {
+        document.getElementById('error-msg').style.display = 'block';
+        document.getElementById('date').value = ''; // Clear the input field
+    } else {
+        document.getElementById('error-msg').style.display = 'none';
+    }
+}
+
+function validateTime() {
+    var selectedTime = document.querySelector('.time').value;
+    
+    // Extract the hour part from the selected time
+    var selectedHour = parseInt(selectedTime.split(':')[0]);
+
+    // Check if the selected hour is between 10 and 22 (10pm in 24-hour format)
+    if (selectedHour < 10 || selectedHour >= 22) {
+        document.getElementById('error-msg').style.display = 'block';
+        document.getElementById('time').value = ''; // Clear the input field
+    } else {
+        document.getElementById('error-msg').style.display = 'none';
+    }
+}
+  </script>
+</body>
+
+
+</html>

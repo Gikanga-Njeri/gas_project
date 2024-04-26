@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+  <link rel="stylesheet" href="03-order.css">
+
+  <script src="audio.js"></script>
+</head>
+<body onload="welcome()">
+  <audio id="backgroundAudio" autoplay>
+
+    <source src="videos/little.mp3" type="audio/mp3">
+    
+</audio>
+
+  <div class="home-b">
+    <button><a href="index.html">Go to home</a></button>
+  </div>
+
+
+  <div class="container">
+    <div class="head">
+      <h1>Order page</h1>
+      <div class="call">Call for help</div>
+      <p id="message">Call: 0797124837</p>
+      
+    </div>
+
+    <form action="">
+      <div class="input">
+        <label for="">Cylinder Type</label>
+        <div class="select">
+          <select>
+            <option value="">Select</option>
+            <option value="">Total gas</option>
+            <option value="">Afri gas</option>
+            <option value="">Pro gas</option>
+            <option value="">Taifa gas</option>
+            <option value="">K-gas</option>
+            <option value="">Sea gas</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input">
+        <label for="">Cylinder Size</label>
+        <div class="select">
+          <select name="" id="">
+            <option value="">Select</option>
+            <option value="">3KG</option>
+            <option value="">6KG</option>
+            <option value="">13KG</option>
+            <option value="">22.5KG</option>
+            <option value="">50KG</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input">
+        <label for="">Quantity</label>
+        <div class="quality">
+          <input type="number">
+        </div>
+      </div>
+
+      <div class="input">
+        <label for="">Accessories</label>
+        <div class="select">
+          <select>
+            <option value="">Select</option>
+            <option value="">3Kg Meko Grill</option>
+            <option value="">6Kg Meko Grill</option>
+            <option value="">3Kg Burner</option>
+            <option value="">6Kg Burner</option>
+            <option value="">Low Pressure hose pipe</option>
+            <option value="">Unified High Pressure hose pipe</option>
+            <option value="">Meko Plus Cooker</option>
+            <option value="">Low Pressure hose pipe</option>
+            <option value="">High Pressure hose pipe</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input">
+        <label for="">Quantity</label>
+        <div class="quality">
+          <input type="number">
+        </div>
+      </div>
+
+      <div class="input">
+        <label for="">Payment options</label>
+        <div class="select">
+          <select>
+            <option value="">Select</option>
+            <option value="">M-pesa</option>
+            <option value="">Card</option>
+            <option value="">Cash</option>
+            <option value="">Bank</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input">
+        <button onclick="successM()"><a href="07-delivery.html">Click to order</a></button>
+      </div>
+
+    
+
+      <div class="end">
+        <span>Thank you for ordering with us. 🙏<br> We value you. 🚴‍♀️<br> Welcome.😊</span>
+      </div>
+    </form>
+  </div>
+
+  
+
+  <script>
+
+    function welcome(){
+      alert("Welcome to our order page.")
+    }
+
+    function successM(){
+      alert("Thank you for ordering with us")
+    }
+
+    const callEl = document.querySelector(".call");
+
+    const message = document.getElementById("message");
+
+    callEl.addEventListener('click', ()=>{
+      message.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
